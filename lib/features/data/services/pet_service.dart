@@ -67,4 +67,33 @@ class PetService {
       throw Exception('Error: $e');
     }
   }
+
+  // Poder agregar una nueva mascota POST
+  Future<void> postPet(Map<String, dynamic> petData) async {
+    try {
+      final token = await _getToken();
+
+      if (token == null) {
+        throw Exception('Token de autenticación no encontrado');
+      }
+
+      final response = await _dio.post(
+        'http://localhost:3000/api/newpet',
+        data: petData,
+        options: Options(
+          headers: {
+            'Authorization': 'Bearer $token',
+          },
+        ),
+      );
+
+      if (response.statusCode == 201) {
+        print('Mascota registrada correctamente');
+      } else {
+        throw Exception('Error al registrar la mascota');
+      }
+    } catch (e) {
+      throw Exception('Error: $e');
+    }
+  }
 }

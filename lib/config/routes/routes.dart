@@ -5,7 +5,7 @@ import 'package:furconnect/features/presentation/page/login_presentation_page/lo
 import 'package:furconnect/features/presentation/page/login_page/login.dart';
 import 'package:furconnect/features/presentation/page/home_page/home.dart';
 import 'package:furconnect/features/presentation/page/home_page/home_content.dart';
-import 'package:furconnect/features/presentation/page/pet_page/newPet_page.dart';
+import 'package:furconnect/features/presentation/page/pet_page/new_pet_page.dart';
 import 'package:furconnect/features/presentation/widget/item_pet.dart';
 
 final router = GoRouter(

@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
 import 'package:furconnect/features/data/services/pet_service.dart';
-import 'package:furconnect/features/presentation/widget/item_pet.dart';
 
 class HomeContent extends StatefulWidget {
   @override

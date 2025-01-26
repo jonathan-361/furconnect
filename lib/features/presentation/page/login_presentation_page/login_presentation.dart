@@ -21,7 +21,7 @@ class LoginPresentation extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              SizedBox(height: 230),
+              SizedBox(height: 170),
               Image.asset(
                 'assets/images/logo_furconnect.png',
                 width: 270,
@@ -34,7 +34,7 @@ class LoginPresentation extends StatelessWidget {
                   GoRouter.of(context).go('/login');
                 },
               ),
-              SizedBox(height: 20),
+              SizedBox(height: 60),
             ],
           ),
         ),
